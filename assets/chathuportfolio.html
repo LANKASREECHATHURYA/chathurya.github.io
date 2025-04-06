@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lanka.sreechathurya Portfolio</title>
+    <style>
+        html {
+    zoom: 100%; 
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 100px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F5F5DC; 
+            color: #2F4F4F; 
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #2F4F4F; 
+            color: #F5F5DC; 
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            font-size: 25px;
+            margin-left:-50px;
+        }
+
+        nav ul li a {
+            color: #F5F5DC; 
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 120px 20px;
+            background: #2F4F4F; 
+            color: #F5F5DC; 
+            text-align: left;
+            height:700px;
+        }
+        p{
+            font-size: 26px;
+        }
+
+        .hero img {
+            width: 360px;
+            height: 450px;
+            margin-left: -150px;
+
+        }
+
+        .hero-content {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        button, .download-cv {
+            padding: 10px 20px;
+            border: none;
+            background: #2F4F4F; /* Dark Green */
+            color: #F5F5DC; /* Beige */
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about {
+            background: #F5F5DC; /* Beige */
+            padding: 50px;
+            margin-bottom: 20px;
+            font-size:24px;
+            padding-top: 120px; /* Extra space to prevent cutting off */
+    margin-top: -120px; 
+        }
+
+        .education {
+    background: #F5F5DC; /* Beige */
+    padding: 20px;
+    width: 300px; /* Adjust width to make it a square */
+    height: 300px; /* Set height equal to width */
+    margin: 20px auto;
+    border: solid;
+    border-color: #2F4F4F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* Projects Section */
+        .projects {
+            background: #F5F5DC; /* Beige */
+            padding: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .project-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background: #2F4F4F; /* Dark Green */
+            color: #F5F5DC; /* Beige */
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #F5F5DC;
+    color: #2F4F4F;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #e0dcb8;
+    color: #000;
+}
+
+.project:hover {
+    filter: brightness(90%);
+}
+
+
+        /* Contact Section */
+        .contact {
+            background: #F5F5DC; /* Beige */
+            color: #2F4F4F; /* Dark Green */
+text-align: center;        }
+
+.contact h2 {
+            font-size: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border: 2px solid #2F4F4F; /* Dark Green Border */
+    border-radius: 30px;
+    background-color: #F5F5DC;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    width: fit-content;
+    margin: auto;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            color: #2F4F4F;
+            border-radius: 10px;
+            width: 220px;
+            justify-content: center;
+        }
+
+        .contact-info i {
+            font-size: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2F4F4F; 
+            text-align: center;
+            padding: 20px;
+            color: #F5F5DC;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LANKA SREE CHATHURYA</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero">
+        <img src="assets\yellow.jpg" alt="chathu">
+        <div class="hero-content">
+            <h1>Hello I'am Lanka Sree Chathurya.</h1>
+            <p>|BTech Student|VIT University| </p>
+        </div>
+    </section>
+    
+
+    
+    <div class="content">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>A motivated and innovative Computer Science undergraduate at VIT University and I'm passionate about technology, problem-solving, and continuous learning. With a strong foundation in engineering principles and hands-on experience through academic projects, I enjoy exploring how technology can be used to build practical and innovative solutions.
+
+                Throughout my academic journey, I’ve developed skills in languages like python,c,c++,and some design and I’m always eager to learn more. I actively participate in few hackathons.Passionate about utilizing technology to create meaningful solutions.
+            </p>
+            <div class="education">
+                <h3>Education🎓</h3>
+                <p><strong>BTech CSE stream</strong><br>VIT University, 2023 - 2027</p>
+            </div>
+            <a href="cv.pdf" download class="download-cv">Download my CV →</a>
+        </section>
+        <section id="skills" class="projects">
+            <h2>My Skills</h2>
+            <div class="project-list">
+                <div class="project"><h3>Programming Languages</h3><p><span>&bull;&nbsp;Python</span></p>
+                <p><span>&bull;&nbsp;C</span></p>
+            <p><span>&bull;&nbsp;C++</span></p>
+        <p><span>&bull;&nbsp;Java</span></p></div>
+                <div class="project"><h3>Web Development</h3><p><span>&bull;&nbsp;</span>HTML</p>
+                <p><span>&bull;&nbsp;css</p>
+            <p><span>&bull;&nbsp;JavaScript</span></p></div>
+                <div class="project"><h3>Tools & Platforms</h3><p><span>&bull;&nbsp;</span>GitHub</p>
+                <p><span>&bull;&nbsp;VS Code</span></p>
+            <p><span>&bull;&nbsp;LeetCode</span></p></div>
+                <div class="project"><h3>Soft Skills</h3><p><span>&bull;&nbsp;Teamwork</span></p>
+                <p><span>&bull;&nbsp;Communication</span></p>
+            <p><span>&bull;&nbsp;Problem Solving</span></p></div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project"> <h3>Python Article on Oil Spillage in Marine Ocean</h3><p>Analyzed the impact of oil spills using Python-based data analysis and visualization techniques.Check it out!!
+                 </p> <a href ="assets\oilspill.pdf" download class="pdf"> PDF</a> </div>
+                <div class="project"> <h3>ONEEARTH :Charity program</h3><p>We created a program using C++.Through this you can donate items like food, money, clothes etc. to needy.Check it out!!</p>
+                <a href="https://github.com/ekas06/ONEEARTH" target="_top" rel="noopener noreferrer">ONEEARTH</a> </div>
+                <div class="project"> <h3>Upgraded Surveillance Camera Car Project</h3><p>This project helps as wireless surveillance with a camera so we did hardware to this and software like frontend html,css and backend c program.The details of this project is given in below pdf.Check it out!!</p>
+                    <a href="details.html" target="_blank" rel="noopener noreferrer">PRESS</a></div>
+            </div>
+        </section>
+    </div>
+<hr>
+    <section id="contact" class="contact">
+        <h2>👤 Contact Me! </h2>
+        <div class="contact-info">
+            <div><i class="fas fa-envelope"></i> 📧lankasreechaturya@gmail.com</div>
+            <div><i class="fas fa-phone"></i>📞+91 8328516068</div>        <div class="social-icons">
+            <a href="https://github.com/LANKASREECHATHURYA" target="_blank"><img src="assets\github.jpg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/sree-chathurya-lanka-723ab628a/" target="_blank"><img src="assets\lindin paint.jpg" alt="LinkedIn"></a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>© 2024 Lanka Sree Chathurya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
